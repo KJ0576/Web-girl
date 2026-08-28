@@ -5,17 +5,19 @@ export type CastMember = {
   catchphrase: string;
   profile: string;
   image: string;
+  signature?: boolean;
 };
 
 export const castMembers: CastMember[] = [
   {
-    id: "reina",
+    id: "omuko",
     no: "No.01",
-    name: "REINA",
-    catchphrase: "夜を支配する、絶対的エース。",
+    name: "OMUKO",
+    catchphrase: "この店の顔、絶対的看板エース。",
     profile:
-      "凛とした佇まいと圧倒的な存在感で、店内の空気を一変させる。一度目が合えば、離れられない。",
-    image: "/images/cast/reina.jpg",
+      "凛とした佇まいと圧倒的な存在感で、店内の空気を一変させる。Club Distinyを象徴する看板嬢。一度目が合えば、離れられない。",
+    image: "/images/cast/omuko.jpg",
+    signature: true,
   },
   {
     id: "miyu",

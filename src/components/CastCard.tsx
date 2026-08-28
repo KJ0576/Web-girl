@@ -34,6 +34,18 @@ export default function CastCard({ member }: { member: CastMember }) {
         {/* Gold line reveal */}
         <div className="absolute left-6 right-6 top-6 h-px origin-left scale-x-0 bg-gradient-to-r from-gold-2 to-transparent transition-transform duration-500 ease-out group-hover:scale-x-100" />
 
+        {member.signature && (
+          <div className="absolute right-5 top-5 flex items-center gap-1.5 border border-gold-2/60 bg-black/50 px-3 py-1.5 backdrop-blur-sm">
+            <span className="font-display text-[10px] tracking-wide-luxe text-gold-2">
+              看板
+            </span>
+            <span className="h-3 w-px bg-gold-2/50" />
+            <span className="font-display text-[9px] tracking-widest text-ivory/80">
+              SIGNATURE
+            </span>
+          </div>
+        )}
+
         <div className="absolute inset-x-0 bottom-0 p-6 transition-transform duration-500 ease-out group-hover:-translate-y-2">
           <p className="font-display text-[11px] tracking-wide-luxe text-gold-2/90">
             {member.no}
