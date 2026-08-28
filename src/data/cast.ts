@@ -16,7 +16,7 @@ export const castMembers: CastMember[] = [
     catchphrase: "この店の顔、絶対的看板エース。",
     profile:
       "凛とした佇まいと圧倒的な存在感で、店内の空気を一変させる。Club Distinyを象徴する看板嬢。一度目が合えば、離れられない。",
-    image: "/images/cast/名称未設定のデザイン.png",
+    image: "名称未設定のデザイン.png",
     signature: true,
   },
   {
