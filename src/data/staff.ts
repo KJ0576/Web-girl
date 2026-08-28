@@ -8,11 +8,11 @@ export type StaffMember = {
 
 export const staffMembers: StaffMember[] = [
   {
-    id: "kurosaki",
-    name: "KUROSAKI",
+    id: "asatama",
+    name: "ASATAMA",
     role: "Manager",
     message: "最高の夜を、最後まで。",
-    image: "/images/staff/kurosaki.jpg",
+    image: "/images/staff/asatama.jpg",
   },
   {
     id: "isozaki",
