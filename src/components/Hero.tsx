@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { withBasePath } from "@/lib/basePath";
 
 type HeroProps = {
   hasImage: boolean;
@@ -32,7 +33,7 @@ export default function Hero({ hasImage }: HeroProps) {
       >
         {hasImage ? (
           <Image
-            src="/images/hero.jpg"
+            src={withBasePath("/images/hero.jpg")}
             alt="Club Distiny キャスト"
             fill
             priority

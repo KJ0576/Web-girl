@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { StaffMember } from "@/data/staff";
 import { imageExists } from "@/lib/checkImage";
+import { withBasePath } from "@/lib/basePath";
 
 export default function StaffCard({ member }: { member: StaffMember }) {
   const hasImage = imageExists(member.image);
@@ -10,7 +11,7 @@ export default function StaffCard({ member }: { member: StaffMember }) {
       <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm bg-[#050505] ring-1 ring-gold-2/10">
         {hasImage ? (
           <Image
-            src={member.image}
+            src={withBasePath(member.image)}
             alt={`${member.name} のプロフィール写真`}
             fill
             sizes="(min-width: 768px) 45vw, 90vw"
